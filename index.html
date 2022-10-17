@@ -19,26 +19,28 @@
       <img id="imagenBordes" src="/assets/img/foto-1.jpg" alt="Imagen a la que le quitas y/o agregas bordes.">
     </section>
     <!--/Agregar y/o quitar bordes-->
+    <!--Pidiendo un máximo de 10 stickers-->
     <section>
       <h2>Pidiendo stickers</h2>
       <p>Pide stickers, pero con moderación, solo un máximo de 10. Escoge entre los 3 tipos disponibles.</p>
       <div>
         <div>
-          <img src="/assets/img/foto-2.jpg" alt="Sticker de autos.">
-          <input type="text">
+          <img id="autoSticker" src="/assets/img/foto-2.jpg" alt="Sticker de autos.">
+          <input type="number" value="0" min="0" id="stickerAuto">
         </div>
         <div>
-          <img src="/assets/img/foto-3.jpg" alt="Sticker de gatitos.">
-          <input type="text">
+          <img id="gatitoSticker" src="/assets/img/foto-3.jpg" alt="Sticker de gatitos.">
+          <input type="number" value="0" min="0" id="stickerGatito">
         </div>
         <div>
-          <img src="/assets/img/foto-4.jpg" alt="Sticker de corazón.">
-          <input type="text">
+          <img id="corazonSticker" src="/assets/img/foto-4.jpg" alt="Sticker de corazón.">
+          <input type="number" value="0" min="0" id="stickerCorazon">
         </div>
-        <button>Verificar</button>
+        <button id="verificarSticker">Verificar</button>
+        <p id="mensajeSticker"></p>
       </div>
-      
     </section>
+    <!--/Pidiendo un máximo de 10 stickers-->
     <section>
       <h2>Clave secreta</h2>
       <p>Ingresa la clave secreta, que no es tan secreta, porque es 911 o 714.</p>
