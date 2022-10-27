@@ -14,7 +14,7 @@ const primerDigito = document.querySelector("#primerDigito");
 const segundoDigito = document.querySelector("#segundoDigito");
 const tercerDigito = document.querySelector("#tercerDigito");
 const validarClave = document.querySelector("#validarClave");
-const mensajeClaveSecreta = document.querySelector("#mensajeClaveSereta");
+const mensajeClaveSecreta = document.querySelector("#mensajeClaveSecreta");
 
 
 //Condiciones de las Secciones
@@ -35,11 +35,11 @@ verificarSticker.addEventListener("click", () => {
 
 //Condiciones de Clave Secreta
 validarClave.addEventListener("click", () => {
-  if(parseInt(primerDigito.value) === 9 && parseInt(segundoDigito.value) === 1 &&parseInt(tercerDigito.value) === 1){
-    mensajeClaveSecreta.textContent = "Password 1 Correcto";
+  if(parseInt(primerDigito.value) === 9 && parseInt(segundoDigito.value) === 1 &&   parseInt(tercerDigito.value) === 1){
+    mensajeClaveSecreta.innerHTML = "Password 1 Correcto";
   } else if(parseInt(primerDigito.value) === 7 && parseInt(segundoDigito.value) === 1 && parseInt(tercerDigito.value) === 4){
-    mensajeClaveSecreta.textContent = "Password 2 Correcto";
+    mensajeClaveSecreta.innerHTML = "Password 2 Correcto";
   } else {
-    mensajeClaveSecreta.textContent = "Password Incorrecto";
+    mensajeClaveSecreta.innerHTML = "Password Incorrecto";
   }
 })
